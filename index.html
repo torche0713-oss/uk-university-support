@@ -199,7 +199,7 @@
       padding: 72px 0;
     }
 
-    section:not(.hero):not(.form-section):not(.trust-bar):nth-child(even) {
+    section:not(.hero):not(.trust-bar):nth-child(even) {
       background: #fff;
     }
 
@@ -552,153 +552,6 @@
       line-height: 1.6;
     }
 
-    /* ===== FORM SECTION ===== */
-    .form-section {
-      background: linear-gradient(135deg, #0F172A, #2563EB);
-      color: #fff;
-      padding: 80px 0;
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: start;
-    }
-
-    .form-left h2 {
-      color: #fff;
-    }
-
-    .form-left p {
-      color: rgba(255,255,255,0.8);
-      font-size: 1.05rem;
-      margin-bottom: 24px;
-    }
-
-    .form-benefits {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .form-benefits li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.85);
-      list-style: none;
-    }
-
-    .form-benefits li::before {
-      content: "✓";
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: rgba(16,185,129,0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #10B981;
-      flex-shrink: 0;
-    }
-
-    .form-card {
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 20px;
-      padding: 32px;
-    }
-
-    .form-card form {
-      display: grid;
-      gap: 16px;
-    }
-
-    .form-card label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: rgba(255,255,255,0.85);
-    }
-
-    .form-card input,
-    .form-card select {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 10px;
-      font-size: 0.95rem;
-      background: rgba(255,255,255,0.08);
-      color: #fff;
-      transition: border-color 0.15s;
-      color-scheme: dark;
-    }
-
-    .form-card input[type="date"]::-webkit-calendar-picker-indicator,
-    .form-card input[type="time"]::-webkit-calendar-picker-indicator {
-      filter: invert(1);
-      cursor: pointer;
-    }
-
-    .form-card input:focus,
-    .form-card select:focus {
-      outline: none;
-      border-color: #10B981;
-      background: rgba(255,255,255,0.14);
-    }
-
-    .form-card input::placeholder {
-      color: rgba(255,255,255,0.4);
-    }
-
-    .form-card select option {
-      color: #0F172A;
-    }
-
-    .checkbox-group {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .checkbox-group input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      margin-top: 2px;
-      accent-color: #10B981;
-    }
-
-    .checkbox-group label {
-      font-weight: 400;
-      font-size: 0.9rem;
-    }
-
-    .form-card .btn-primary {
-      width: 100%;
-      justify-content: center;
-      margin-top: 6px;
-      padding: 16px;
-      font-size: 1.05rem;
-    }
-
-    .form-disclaimer {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.45);
-      text-align: center;
-      margin-top: 14px;
-    }
-
-    .form-disclaimer a {
-      color: rgba(255,255,255,0.65);
-      text-decoration: underline;
-    }
-
     /* ===== FINAL CTA ===== */
     .final-cta {
       text-align: center;
@@ -787,21 +640,12 @@
         gap: 30px;
       }
 
-      .form-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
       h2 {
         font-size: 1.6rem;
       }
 
       section {
         padding: 50px 0;
-      }
-
-      .form-card {
-        padding: 24px;
       }
 
       .sticky-cta {
@@ -885,24 +729,6 @@
         padding: 14px 16px;
       }
 
-      .form-section {
-        padding: 50px 0;
-      }
-
-      .form-card {
-        padding: 20px;
-      }
-
-      .form-card input,
-      .form-card select {
-        font-size: 0.9rem;
-        padding: 10px 12px;
-      }
-
-      .checkbox-group label {
-        font-size: 0.85rem;
-      }
-
       section {
         padding: 40px 0;
       }
@@ -929,7 +755,7 @@
             <div class="hero-badge"><span>✅</span> Free 15-minute planning call</div>
             <div class="hero-badge"><span>🎓</span> Personal admission consultant</div>
           </div>
-          <a href="#book" class="btn-primary">Book My Free Call</a>
+          <a href="book.html" class="btn-primary">Book My Free Call</a>
         </div>
         <div class="hero-visual">
           <img src="https://i.imgur.com/E27M6gs.jpg" alt="University application support preview" style="width:100%;max-width:500px;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.3);" loading="lazy">
@@ -1141,102 +967,12 @@
   </section>
 
   <!-- ===== FORM / CTA ===== -->
-  <section class="form-section" id="book">
-    <div class="container">
-      <div class="form-grid">
-        <div class="form-left">
-          <span class="section-label" style="color:rgba(255,255,255,0.7);">Book Your Free Consultation</span>
-          <h2 style="color:#fff;">Ready to start your university journey?</h2>
-          <p>Speak with a personal advisor and receive your free application roadmap.</p>
-          <ul class="form-benefits">
-            <li>Free 15-minute planning call</li>
-            <li>Personal admission consultant assigned to you</li>
-            <li>Tailored checklist and timeline after your call</li>
-            <li>No obligation. No upfront payment.</li>
-          </ul>
-        </div>
-        <div class="form-card">
-          <form id="leadForm" action="https://script.google.com/macros/s/AKfycby3LZsyv6r6htAfMvpckFJIe-L3cpgG5CFcTh2x5x5Crypi-hGXesNP5pltR80YvTY5ew/exec" method="POST">
-            <div>
-              <label for="fullName">Full Name *</label>
-              <input type="text" id="fullName" name="fullName" placeholder="e.g. John Smith" required>
-            </div>
-            <div>
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="e.g. john@example.co.uk" required>
-            </div>
-            <div>
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required>
-            </div>
-            <div>
-              <label for="postcode">Postcode (UK only) *</label>
-              <input type="text" id="postcode" name="postcode" placeholder="e.g. SW1A 1AA" required>
-            </div>
-            <div>
-              <label for="age">Age (optional)</label>
-              <input type="number" id="age" name="age" placeholder="e.g. 22" min="21" max="100">
-            </div>
-            <div>
-              <label for="course">Course You Are Interested In *</label>
-              <select id="course" name="course" required>
-                <option value="" disabled selected>Select a course area</option>
-                <option value="business-management">Business Management</option>
-                <option value="health-care">Health & Care</option>
-                <option value="accounting-finance">Accounting & Finance</option>
-                <option value="construction">Construction</option>
-                <option value="project-management">Project Management</option>
-                <option value="computing">Computing</option>
-                <option value="psychology">Psychology</option>
-                <option value="law">Law</option>
-                <option value="criminology">Criminology</option>
-              </select>
-            </div>
-            <div>
-              <label for="residencyYears">How many years have you lived in the UK? *</label>
-              <select id="residencyYears" name="residencyYears" required>
-                <option value="" disabled selected>Select</option>
-                <option value="3-5">3-5 years</option>
-                <option value="5-10">5-10 years</option>
-                <option value="10-plus">10+ years</option>
-                <option value="always">All my life</option>
-              </select>
-            </div>
-            <div>
-              <label for="callDate">Preferred Call Date *</label>
-              <input type="date" id="callDate" name="callDate" required>
-            </div>
-            <div>
-              <label for="callTime">Preferred Call Time *</label>
-              <input type="time" id="callTime" name="callTime" required>
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" id="tooBusy" name="tooBusy">
-              <label for="tooBusy">I am too busy or do not have time to manage this alone</label>
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" id="confused" name="confused">
-              <label for="confused">I am confused about documents or requirements</label>
-            </div>
-            <button type="submit" class="btn-primary">Book My Free Call</button>
-          </form>
-          <div id="formSuccess" style="display:none;text-align:center;padding:20px 0;">
-            <div style="font-size:2.5rem;margin-bottom:12px;">✅</div>
-            <h3 style="color:#fff;margin-bottom:8px;">You're all set!</h3>
-            <p style="color:rgba(255,255,255,0.8);font-size:0.95rem;">We've received your details. A personal admission consultant will call you at your scheduled time.</p>
-          </div>
-          <p class="form-disclaimer" id="formDisclaimer">Free university application support for UK residents. Information you provide is used to prepare your consultation and checklist. By submitting, you agree to our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== FINAL CTA ===== -->
   <section class="final-cta">
     <div class="container">
       <h2>Your university journey starts here</h2>
       <p style="max-width:480px;margin:0 auto 28px;">University applications should not feel overwhelming. Get your free roadmap and a dedicated consultant today.</p>
-      <a href="#book" class="btn-primary">Book A 15-Minute Call</a>
+      <a href="book.html" class="btn-primary">Book A 15-Minute Call</a>
     </div>
   </section>
 
@@ -1257,52 +993,8 @@
 
   <!-- ===== STICKY MOBILE CTA ===== -->
   <div class="sticky-cta">
-    <a href="#book" class="btn-primary">Book My Free Call</a>
+    <a href="book.html" class="btn-primary">Book My Free Call</a>
   </div>
-
-  <script>
-    (function() {
-      var form = document.getElementById('leadForm');
-      var successDiv = document.getElementById('formSuccess');
-      var disclaimer = document.getElementById('formDisclaimer');
-      var callDate = document.getElementById('callDate');
-      var callTime = document.getElementById('callTime');
-
-      // Set min date to today
-      if (callDate) {
-        var today = new Date().toISOString().split('T')[0];
-        callDate.setAttribute('min', today);
-      }
-
-      form.addEventListener('submit', function(e) {
-        var action = this.getAttribute('action');
-        if (action === '#' || action === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
-          e.preventDefault();
-          return;
-        }
-
-        // If real URL is set, submit via AJAX to stay on page
-        e.preventDefault();
-        var formData = new FormData(this);
-        form.querySelector('button[type="submit"]').disabled = true;
-        form.querySelector('button[type="submit"]').textContent = 'Submitting...';
-
-        fetch(action, {
-          method: 'POST',
-          body: formData
-        })
-        .then(function(res) {
-          form.style.display = 'none';
-          disclaimer.style.display = 'none';
-          successDiv.style.display = 'block';
-        })
-        .catch(function() {
-          // Fallback: submit normally
-          form.submit();
-        });
-      });
-    })();
-  </script>
 
 </body>
 </html>
