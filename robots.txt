@@ -1,4 +1,4 @@
-Sitemap: https://torche0713-oss.github.io/uk-university-support/sitemap.xml
+Sitemap: https://uk-university-support.vercel.app/sitemap.xml
 
 User-agent: *
 Allow: /
