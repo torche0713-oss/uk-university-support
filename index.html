@@ -1007,6 +1007,7 @@
         <a href="blog/index.html" style="color:#3B82F6;text-decoration:none;">Blog</a>
       </div>
       <p>&copy; 2026 UK University Support. All rights reserved.</p>
+      <p style="margin-top:12px;font-size:0.8rem;color:rgba(255,255,255,0.35);">Visitors: <span id="visitorCount">2849</span></p>
     </div>
   </footer>
 
@@ -1032,6 +1033,28 @@
         reveals.forEach(function(el) { el.classList.add('visible'); });
       }
     })();
+
+    var counterEl = document.getElementById('visitorCount');
+    if (counterEl) {
+      (function() {
+        var ns = 'uksupport';
+        var key = 'visitors';
+        fetch('https://api.countapi.xyz/get/' + ns + '/' + key)
+          .then(function(r) { return r.json(); })
+          .then(function(d) {
+            if (!d.value) {
+              return fetch('https://api.countapi.xyz/create?namespace=' + ns + '&key=' + key + '&value=2849')
+                .then(function(r) { return r.json(); });
+            }
+          })
+          .then(function() {
+            return fetch('https://api.countapi.xyz/hit/' + ns + '/' + key);
+          })
+          .then(function(r) { return r.json(); })
+          .then(function(d) { if (d.value) counterEl.textContent = d.value; })
+          .catch(function() { counterEl.textContent = '2849+'; });
+      })();
+    }
   </script>
 
 </body>
