@@ -195,6 +195,17 @@
       font-weight: 400;
     }
 
+    .trust-card.visible .trust-icon {
+      animation: iconBounce 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    @keyframes iconBounce {
+      0% { transform: scale(0.3); opacity: 0; }
+      50% { transform: scale(1.15); }
+      70% { transform: scale(0.95); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
     /* ===== SECTIONS ===== */
     section {
       padding: 72px 0;
